@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="TrafficRoute - Intelligent Traffic Route Optimization for Tanzania. Real-time navigation, weather-aware routing, and traffic reports."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- ============================================================
+         PWA META TAGS
+         ============================================================ -->
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Apple iOS PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="TrafficRoute" />
+
+    <!-- Android PWA Support -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="application-name" content="TrafficRoute" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="TrafficRoute - Smart Navigation Tanzania" />
+    <meta property="og:description" content="Intelligent Traffic Route Optimization for Tanzania with real-time navigation and weather-aware routing." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trafficroute.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TrafficRoute - Smart Navigation Tanzania" />
+    <meta name="twitter:description" content="Real-time navigation and traffic optimization for Tanzania." />
+
+    <title>TrafficRoute - Smart Navigation Tanzania</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- ============================================================
+         SERVICE WORKER REGISTRATION
+         ============================================================ -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('Service Worker registered successfully');
+            })
+            .catch(function(error) {
+              console.log('Service Worker registration failed:', error);
+            });
+        });
+      } else {
+        console.log('Service Workers are not supported by this browser');
+      }
+    </script>
+
+    <!-- ============================================================
+         INSTALL BANNER FOR PWA
+         ============================================================ -->
+    <script>
+      var deferredPrompt;
+      window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        deferredPrompt = e;
+        console.log('App can be installed');
+      });
+
+      window.addEventListener('appinstalled', function() {
+        console.log('App was installed successfully');
+      });
+    </script>
+  </body>
+</html>

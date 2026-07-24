@@ -1,0 +1,14 @@
+{
+  "appId": "com.trafficroute.app",
+  "appName": "TrafficRoute",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  }
+}

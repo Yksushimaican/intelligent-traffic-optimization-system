@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">TrafficRoute</string>
+    <string name="title_activity_main">TrafficRoute</string>
+    <string name="package_name">com.trafficroute.app</string>
+    <string name="custom_url_scheme">com.trafficroute.app</string>
+</resources>

@@ -1,0 +1,121 @@
+
+> frontend_new@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 2:17:   'FaMoon' is defined but never used          no-unused-vars
+  Line 2:59:   'FaCar' is defined but never used           no-unused-vars
+  Line 2:66:   'FaMapMarkerAlt' is defined but never used  no-unused-vars
+  Line 2:82:   'FaFlag' is defined but never used          no-unused-vars
+  Line 2:90:   'FaRoute' is defined but never used         no-unused-vars
+  Line 2:99:   'FaRedo' is defined but never used          no-unused-vars
+  Line 2:107:  'FaSave' is defined but never used          no-unused-vars
+
+src\components\Dashboard.js
+  Line 6:5:   'FaTachometerAlt' is defined but never used  no-unused-vars
+  Line 8:5:   'FaRoute' is defined but never used          no-unused-vars
+  Line 9:5:   'FaHistory' is defined but never used        no-unused-vars
+  Line 10:5:  'FaTrafficLight' is defined but never used   no-unused-vars
+  Line 11:5:  'FaCog' is defined but never used            no-unused-vars
+  Line 12:5:  'FaChevronLeft' is defined but never used    no-unused-vars
+  Line 13:5:  'FaChevronRight' is defined but never used   no-unused-vars
+  Line 14:5:  'FaSignOutAlt' is defined but never used     no-unused-vars
+
+src\components\Map.js
+  Line 9:5:    'FaCar' is defined but never used                                                                                                         no-unused-vars
+  Line 10:5:   'FaMapMarkerAlt' is defined but never used                                                                                                no-unused-vars
+  Line 11:5:   'FaFlag' is defined but never used                                                                                                        no-unused-vars
+  Line 14:5:   'FaBuilding' is defined but never used                                                                                                    no-unused-vars
+  Line 15:5:   'FaRoad' is defined but never used                                                                                                        no-unused-vars
+  Line 16:5:   'FaCity' is defined but never used                                                                                                        no-unused-vars
+  Line 328:8:  React Hook useEffect has missing dependencies: 'validEndPoint' and 'validStartPoint'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src\components\MapboxMap.js
+  Line 2:10:   'FaCar' is defined but never used                                                                                                           no-unused-vars
+  Line 2:17:   'FaMapMarkerAlt' is defined but never used                                                                                                  no-unused-vars
+  Line 2:33:   'FaFlag' is defined but never used                                                                                                          no-unused-vars
+  Line 2:64:   'FaLocationArrow' is defined but never used                                                                                                 no-unused-vars
+  Line 20:12:  'markers' is assigned a value but never used                                                                                                no-unused-vars
+  Line 20:21:  'setMarkers' is assigned a value but never used                                                                                             no-unused-vars
+  Line 36:11:  'isValidCoordinate' is assigned a value but never used                                                                                      no-unused-vars
+  Line 77:8:   React Hook useEffect has a missing dependency: 'initializeMap'. Either include it or remove the dependency array                            react-hooks/exhaustive-deps
+  Line 150:8:  React Hook useEffect has a missing dependency: 'mapStyles'. Either include it or remove the dependency array                                react-hooks/exhaustive-deps
+  Line 199:8:  React Hook useEffect has missing dependencies: 'hasZoomedToStart' and 'zoomToLocation'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 207:8:  React Hook useEffect has missing dependencies: 'hasZoomedToEnd' and 'zoomToLocation'. Either include them or remove the dependency array    react-hooks/exhaustive-deps
+
+src\components\RoutePlanner.js
+  Line 36:21:  'weatherAPI' is defined but never used  no-unused-vars
+
+src\components\SearchBar.js
+  Line 2:59:   'FaRoad' is defined but never used   no-unused-vars
+  Line 2:106:  'FaClock' is defined but never used  no-unused-vars
+
+src\components\TrafficAnalysis.js
+  Line 2:33:  'FaChartLine' is defined but never used             no-unused-vars
+  Line 7:12:  'speedsHistory' is assigned a value but never used  no-unused-vars
+
+src\components\TrafficReports.js
+  Line 15:5:  'FaFilter' is defined but never used  no-unused-vars
+  Line 17:5:  'FaEye' is defined but never used     no-unused-vars
+
+src\components\TurnByTurnNavigation.js
+  Line 10:5:   'FaCrosshairs' is defined but never used                                                                                                                              no-unused-vars
+  Line 13:5:   'FaExclamationTriangle' is defined but never used                                                                                                                     no-unused-vars
+  Line 37:12:  'totalDistance' is assigned a value but never used                                                                                                                    no-unused-vars
+  Line 38:12:  'totalDuration' is assigned a value but never used                                                                                                                    no-unused-vars
+  Line 55:8:   React Hook useEffect has missing dependencies: 'endPoint', 'startNavigation', 'startPoint', and 'stopNavigation'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src\components\WeatherDashboard.js
+  Line 4:5:    'FaCloudSun' is defined but never used                                                                                                                  no-unused-vars
+  Line 17:5:   'FaCalendarAlt' is defined but never used                                                                                                               no-unused-vars
+  Line 22:5:   'FaThermometerHalf' is defined but never used                                                                                                           no-unused-vars
+  Line 24:5:   'FaSearch' is defined but never used                                                                                                                    no-unused-vars
+  Line 276:8:  React Hook useEffect has missing dependencies: 'fetchWeather' and 'isUsingGPS'. Either include them or remove the dependency array                      react-hooks/exhaustive-deps
+  Line 286:8:  React Hook useEffect has missing dependencies: 'currentLocation', 'fetchWeather', and 'isUsingGPS'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src\components\WeatherLocationSearch.js
+  Line 4:5:   'FaSearch' is defined but never used                                                                                 no-unused-vars
+  Line 37:8:  React Hook useEffect has a missing dependency: 'selectedLocation'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\components\WeatherSummary.js
+  Line 4:5:    'FaCloudSun' is defined but never used                                                                           no-unused-vars
+  Line 10:5:   'FaEye' is defined but never used                                                                                no-unused-vars
+  Line 16:5:   'FaClock' is defined but never used                                                                              no-unused-vars
+  Line 17:5:   'FaThermometerHalf' is defined but never used                                                                    no-unused-vars
+  Line 25:12:  'locationName' is assigned a value but never used                                                                no-unused-vars
+  Line 136:8:  React Hook useEffect has a missing dependency: 'fetchWeather'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\services\locationIntelligence.js
+  Line 315:1:  Assign instance to a variable before exporting as module default  import/no-anonymous-default-export
+
+src\services\navigationService.js
+  Line 335:1:  Assign instance to a variable before exporting as module default  import/no-anonymous-default-export
+
+src\services\searchEngine.js
+  Line 538:1:  Assign instance to a variable before exporting as module default  import/no-anonymous-default-export
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  184 kB (-15 B)  build\static\js\main.8be137a1.js
+  17.53 kB        build\static\css\main.b6ec339b.css
+  1.76 kB         build\static\js\453.411c268b.chunk.js
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
